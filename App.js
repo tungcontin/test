@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import AwesomeHierarchyGraph from 'react-native-d3-tree-graph'
+import AwesomeHierarchyGraph from './Components/Tree/'
 
 var root = {
   name: "",
@@ -11,7 +11,7 @@ var root = {
           name: "Q",
           id: 16,
           no_parent: true,
-          imageUrl: { href: 'https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png'},
+          imageUrl: { href: 'https://imgur.com/I80W1Q0.png'},
           nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
           nodeTextStyle: { fontSize: 12 }
       },
@@ -20,23 +20,51 @@ var root = {
       id: 2,
       no_parent: true,
       hidden: true,
-      children: [{
+      children: [
+      {
+            name: "U",
+            id: 12,
+            no_parent: true,
+            imageUrl: { href: "https://audit-controle-interne.com/wp-content/uploads/2019/03/avatar-user-teacher-312a499a08079a12-512x512.png"},
+            nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
+            nodeTextStyle: { fontSize: 12 }
+      },
+      {
+            name: "",
+            id: 24,
+            hidden: true,
+            no_parent: true,
+            children: [{
+                name: "V",
+                id: 25,
+                imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
+                nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
+                nodeTextStyle: { fontSize: 12 }
+            }, {
+                name: "W",
+                id: 26,
+                imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
+                nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
+                nodeTextStyle: { fontSize: 12 }
+            }]
+      },
+      {
           name: "J",
           id: 12,
-          imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+          imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
           nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
           nodeTextStyle: { fontSize: 12 }
       }, {
           name: "L",
           id: 13,
           no_parent: true,
-          imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+          imageUrl: { href: "https://audit-controle-interne.com/wp-content/uploads/2019/03/avatar-user-teacher-312a499a08079a12-512x512.png"},
           nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
           nodeTextStyle: { fontSize: 12 }
       }, {
           name: "C",
           id: 3,
-          imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+          imageUrl: { href: "https://audit-controle-interne.com/wp-content/uploads/2019/03/avatar-user-teacher-312a499a08079a12-512x512.png"},
           nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
           nodeTextStyle: { fontSize: 12 }
       }, {
@@ -47,7 +75,7 @@ var root = {
           children: [{
               name: "D",
               id: 5,
-              imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+              imageUrl: { href: "https://audit-controle-interne.com/wp-content/uploads/2019/03/avatar-user-teacher-312a499a08079a12-512x512.png"},
               nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
               nodeTextStyle: { fontSize: 12 }
           }, {
@@ -58,48 +86,64 @@ var root = {
               children: [{
                   name: "P",
                   id: 15,
-                  imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+                  imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
                   nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
                   nodeTextStyle: { fontSize: 12 }
               }]
           }, {
               name: "E",
               id: 6,
-              imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+              no_parent: true,
+              imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
               nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
               nodeTextStyle: { fontSize: 12 }
           }]
       }, {
           name: "K",
           id: 11,
-          imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+          no_parent: true,
+          imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
           nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
           nodeTextStyle: { fontSize: 12 }
       }, {
           name: "G",
           id: 7,
-          imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+          imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
           nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
-          nodeTextStyle: { fontSize: 12 },
+          nodeTextStyle: { fontSize: 12 }
+       },
+       {
+          name: "",
+                        id: 23,
+                        hidden: true,
+                        no_parent: true,
           children: [{
               name: "H",
               id: 8,
-              imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+              imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
               nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
               nodeTextStyle: { fontSize: 12 }
           }, {
               name: "I",
               id: 9,
-              imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+              imageUrl: { href: "https://imgur.com/I80W1Q0.png"},
               nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
               nodeTextStyle: { fontSize: 12 }
           }]
+      },
+      {
+          name: "S",
+          id: 22,
+          no_parent: true,
+          imageUrl: { href: "https://audit-controle-interne.com/wp-content/uploads/2019/03/avatar-user-teacher-312a499a08079a12-512x512.png"},
+          nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
+          nodeTextStyle: { fontSize: 12 }
       }]
   }, {
       name: "M",
       id: 10,
       no_parent: true,
-      imageUrl: { href: "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png"},
+      imageUrl: { href: "https://audit-controle-interne.com/wp-content/uploads/2019/03/avatar-user-teacher-312a499a08079a12-512x512.png"},
       nodeImageStyle: { imageHeight: 60 , imageWidth: 60, opacity: 1 },
       nodeTextStyle: { fontSize: 12 },
       children: [
@@ -136,15 +180,25 @@ var siblings = [{
       name: "E"
   }
 }, {
-  source: {
-      id: 16,
-      name: "Q"
-  },
-  target: {
-      id: 10,
-      name: "M"
-  }
-}];
+   source: {
+       id: 16,
+       name: "Q"
+   },
+   target: {
+       id: 10,
+       name: "M"
+   }
+ },
+ {
+   source: {
+       id: 7,
+       name: "G"
+   },
+   target: {
+       id: 22,
+       name: "S"
+   }
+ }];
 
 export default function App() {
   return (
